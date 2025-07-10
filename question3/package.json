@@ -1,0 +1,21 @@
+{
+	"name": "question3",
+	"version": "1.0.0",
+	"description": "",
+	"main": "redis.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "nodemon server.js"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"type": "commonjs",
+	"dependencies": {
+		"dotenv": "^17.0.1",
+		"express": "^5.1.0",
+		"mongoose": "^8.16.1",
+		"path": "^0.12.7",
+		"redis": "^5.5.6"
+	}
+}

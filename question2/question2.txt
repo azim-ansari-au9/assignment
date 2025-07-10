@@ -1,0 +1,10 @@
+Assignment 2 : ( Nodejs )
+MongoDB Aggregation for Procurement Reports ( Nodejs )
+Objective:
+Create an API to fetch spend analysis from MongoDB collections.
+Details:
+ Create purchase_orders and invoices collections (with sample data).
+ Write a Node.js API to:
+o Aggregate total purchase amounts per vendor.
+o Aggregate invoice paid amounts per vendor.
+o Return a vendor-wise report showing PO and Invoice totals.
