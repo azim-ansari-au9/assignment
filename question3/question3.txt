@@ -1,0 +1,14 @@
+Objective:
+Build a Node.js API that applies role-based data filters.
+Details:
+ Create an /getPRs API.
+ Read user role and data permissions from a JSON config:
+{
+    role    :   buyer ,
+    dataPermissions : {
+    allowedPlants   : [    PlantA  ,     PlantB  ],
+    maxAmount   : 50000
+}
+}
+ Query the PR collection and return only the allowed records.
+ Cache permissions in Redis.

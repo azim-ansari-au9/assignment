@@ -1,0 +1,16 @@
+Create a Node.js API that reads a JSON config defining business rules for a procurement
+process and applies them to input data.
+Details:
+ Build a /processPR POST API.
+ Take a Purchase Requisition (PR) JSON payload as input.
+ Apply rules defined in a JSON file (e.g., auto-approve if value &lt; 10,000; set urgency
+based on delivery date).
+ Return the processed PR JSON from the API response.
+
+Sample Business Rule JSON for the API:
+{
+&quot;approvalRules&quot;: [
+{ &quot;condition&quot;: &quot;totalAmount &lt; 10000&quot;, &quot;action&quot;: &quot;autoApprove&quot;, &quot;setStatus&quot;: &quot;Approved&quot; },
+{ &quot;condition&quot;: &quot;deliveryDays &lt; 3&quot;, &quot;action&quot;: &quot;setUrgency&quot;, &quot;urgency&quot;: &quot;High&quot; }
+]
+}
